@@ -40,5 +40,9 @@ public class visualizar_produtos {
 
     }
 
+    @After
+    public void fechar(){
+        driver.quit();
+    }
 
 }

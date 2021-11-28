@@ -14,3 +14,13 @@
      Dado que estou na pagina dos produtos
      Quando clico no produto "1" que quero adicionar no carrinho
      Então abre a pagina do produto com o botão para adicionar ao carrinho que ao clicar adicionar "(1)" produto no carrinho
+
+   Cenário: Listar produtos no carrinho
+     Dado eu estar na pagina home
+     Quando já adicionei produtos no carrinho
+     Então vou clicar no carrinho para visualizar os meus produtos
+
+    Cenário: finalizar compra
+      Dado eu já estar logado
+      Quando na pagina de carrinho de compras
+      Então vou finalizar a compra e efetuar o pagamento

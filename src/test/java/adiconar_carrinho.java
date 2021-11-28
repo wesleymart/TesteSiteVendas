@@ -38,9 +38,9 @@ public class adiconar_carrinho {
 
 
         driver.get("https://marcelodebittencourt.com/demoprestashop/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("#add-to-cart-or-refresh > div.product-add-to-cart > div > div.add")).click();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("#blockcart-modal > div > div > div.modal-body > div > div.col-md-7 > div > div > a > i")).click();
 
 
@@ -49,11 +49,11 @@ public class adiconar_carrinho {
 
     }
 
-    /*@After
+    @After
     public void fechar(){
         driver.quit();
     }
-*/
+
 
 
 }
