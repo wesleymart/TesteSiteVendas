@@ -9,7 +9,6 @@
    Quando ainda não fiz o login
    Então visualizo o primeiro ou unico produto disponivel na posição "1" com valor diferente de "0"
 
-
    Cenário: Adicionar produto no carrinho
      Dado que estou na pagina dos produtos
      Quando clico no produto "1" que quero adicionar no carrinho
