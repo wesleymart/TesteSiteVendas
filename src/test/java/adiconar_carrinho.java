@@ -49,11 +49,4 @@ public class adiconar_carrinho {
 
     }
 
-    @After
-    public void fechar(){
-        driver.quit();
-    }
-
-
-
 }
