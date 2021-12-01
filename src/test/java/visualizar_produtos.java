@@ -1,4 +1,5 @@
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
@@ -15,13 +16,15 @@ public class visualizar_produtos {
 
     public static WebDriver driver;
 
+    @Before
+    public void inicializar(){
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
 
     @Dado("que estou na pagina de produtos")
     public void que_estou_na_pagina_de_produtos() {
-
-    driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://marcelodebittencourt.com/demoprestashop/");
+     driver.get("https://marcelodebittencourt.com/demoprestashop/");
 
     }
     @Quando("ainda não fiz o login")
